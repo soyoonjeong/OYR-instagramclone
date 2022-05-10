@@ -1,0 +1,141 @@
+body{
+    background-color:rgba(var(--b3f,250,250,250),1);
+}
+.flex{
+    display:flex;
+    justify-content: center;
+}
+.vertical{
+    flex-direction:column;
+    align-items:center;
+}
+/*photo-container*/
+.phone-container{
+    display:flex;
+    position:relative;
+    width : 380px;
+    height : 580px;
+    margin : 50px 10px 0px 0px;
+}
+.phone-photo{
+    position:absolute;
+    width : 280px;
+    height : 560px;
+}
+.phone1{
+    z-index: 1;
+}
+.phone2{
+    z-index:2;
+    top : 10px;
+    left : 90px;
+}
+/*login-container*/
+.login-container{
+    width:348px;
+    margin : 50px 0px 0px 10px;
+}
+/*login-container의 form*/
+.white-box{
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+form{
+    padding:35px 20px 20px 20px;
+}
+input{
+    padding: 13px 10px;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius :2px;
+    background-color:rgba(var(--b3f,250,250,250),1);
+    width : 245px;
+    font-size: 12px;
+    margin-bottom : 8px;
+}
+button{
+    color : white;
+    background-color : #0080FF;
+    width : 261px;
+    padding : 7px 0px;
+    margin : 7px 0px 20px 0px;
+    font-weight: bold;
+    border-style: none;
+    border-radius :2px;
+}
+.or{
+    width : 265px;
+    align-items: center;
+}
+.or span{
+    font-size:smaller;
+    font-weight: bold;
+    color : rgba(0,0,0,0.6);
+}
+.line{
+    height : 1px;
+    background-color: rgba(0,0,0,0.1);
+    width : 40%;
+    
+}
+.facebook-login{
+    color : #4267B2;
+    margin : 15px 0px;
+}
+.facebook-login span{
+    font-size: 14px;
+    margin-left : 3px;
+    font-weight : bold;
+}
+.login-fail{
+    width : 270px;
+    color :red;
+    font-size : 14px;
+    margin-bottom : 15px;
+}
+form a{
+    font-size: small;
+    text-decoration-line: none;
+    color : rgba(0,0,0,0.6);
+}
+/*login-container의 signup-container*/
+.signup-container{
+    width:348px;
+    font-size : 14px;
+    padding : 25px 0px;
+    margin-top : 10px;
+}
+.signup-container a{
+    text-decoration-line: none;
+    color :#4267B2;
+    font-weight : bold;
+    margin-left : 3px;
+}
+/*login-container의 download-container*/
+.download-container p{
+    font-size :14px;
+}
+.download-container img{
+    width : 130px;
+    height : 40px;
+}
+/*footer*/
+footer{
+    font-size : small;
+    opacity: 0.6;
+    margin-top : 20px;
+}
+footer a{
+    padding : 0px 8px;
+}
+footer div{
+    margin-bottom : 5px;
+}
+.footer_3{
+    margin-top : 5px;
+}
+.footer_3 span:first-child{
+    margin-right : 2px;
+}
+.footer_3 span:last-child{
+    margin-left : 15px;
+}

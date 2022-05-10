@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/main.css" rel="stylesheet" type='text/css'/>
+    <link href="../css/dots-modal.css" rel="stylesheet" type='text/css'/>
+    <link href="../css/comment-modal.css" rel="stylesheet" type='text/css'/>
+    <script src="https://kit.fontawesome.com/c3a4130b4b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="flex">
+      <!--맨 위 nav bar-->
+      <nav>
+        <div>
+          <img src="../image/instagram.png" stlye="height:40px;">
+          <div class="nav-search">
+            <img src="../image/search-interface-symbol.png">
+            <input type="text" placeholder="검색">
+          </div>
+          <div class="nav-icons">
+            <img src="../image/house.png" class="icon">
+            <img src="../image/send.png" class="icon">
+            <img src="../image/plus.png" class="icon">
+            <img src="../image/compass.png" class="icon">
+            <img src="../image/empty heart.png" class="icon">
+            <img src="../image/user1-removebg-preview.png" style="width:35px; height: 35px;">
+          </div>
+        </div>
+      </nav>
+      <main class="flex">
+        <!--왼쪽 게시글 영역-->
+        <div class="main-container">
+          <!--스토리 영역-->
+          <ul class="story-container white-box">
+            <li class="story flex vertical">
+              <img src="../image/user-removebg-preview.png" style="height:75px;">
+              <span>4o9oon</span>
+            </li>
+          </ul>
+          <!--게시글 1-->
+          <div class="post-container white-box">
+            <div class="post-header">
+              <div class="post-writer">
+                <img src="../image/user-removebg-preview.png" class="post-writer-img" style="height:45px;">
+                <span class="user-name post-name">4o9oon</span>
+              </div>
+              <img src="../image/dots.png" class="dots-modal-open" style="width: 20px">
+            </div>
+            <img src="../image/post.PNG" class="post-photo" style="width : 614px;">
+            <div class="post-icons">
+              <div class="post-icons-left">
+                <img src="../image/empty heart.png" onclick="icon_click(this)" style="margin-right : 20px;">
+                <img src="../image/comment.png" class="comment-modal-open" id="0" style="margin-right : 20px;">
+                <img src="../image/send.png">
+              </div>
+              <img src="../image/empty bookmark.png" onclick="icon_click(this)"><!--책갈피--> 
+            </div>
+            <span class="post-like">좋아요 100000개</span>
+            <div class="post-content">
+              <span class="user-name">4o9oon</span>
+              <span class="post-content-text">어쩌구저쩌구</span>
+              <span>...더보기</span>
+            </div>
+            <span class="post-time">49분 전</span>
+            <div class="post-comments">
+              <img src="../image/smile.png" style="width: 20px">
+              <input class="post-comments-input" placeholder="댓글 달기...">
+              <span class="blue-span">게시</span>
+            </div>
+
+          </div>
+          <!--게시글 2-->
+          <div class="post-container white-box"> 
+            <div class="post-header">
+              <div class="post-writer">
+                <img src="../image/user2-removebg-preview.png" class="post-writer-img" style="height:45px;">
+                <span class="user-name post-name">kuromi</span>
+              </div>
+              <img src="../image/dots.png" class="dots-modal-open" style="width: 20px">
+            </div>
+            <img src="../image/post2.PNG" class="post-photo" style="width : 614px;">
+            <div class="post-icons">
+              <div class="post-icons-left">
+                <img src="../image/empty heart.png" onclick="icon_click(this)" style="margin-right : 20px;">
+                <img src="../image/comment.png" class="comment-modal-open" id="1" style="margin-right : 20px;">
+                <img src="../image/send.png">
+              </div>
+              <img src="../image/empty bookmark.png" onclick="icon_click(this)"><!--책갈피--> 
+            </div>
+            <span class="post-like">좋아요 200000개</span>
+            <div class="post-content"><span class="user-name">kuromi</span><span class="post-content-text">어쩌구저쩌구2</span><span>...더보기</span></div>
+            <span class="post-time">59분 전</span>
+            <div class="post-comments">
+              <img src="../image/smile.png" style="width: 20px">
+              <input class="post-comments-input" placeholder="댓글 달기...">
+              <span class="blue-span">게시</span>
+            </div>
+
+          </div>
+        </div>
+        <!--오른쪽 추천친구 영역-->
+        <div class="side-container">
+          <div class="user">
+            <div class="user-info">
+              <img src="../image/user1-removebg-preview.png" style="height:90px;">
+              <span class="user-name" style="font-size: 15px;">4o9oon</span>
+            </div>
+            <span class="blue-span">전환</span>
+          </div>
+          <div class="recommend-header">
+            <span>회원님을 위한 추천</span>
+            <span>모두 보기</span>
+          </div>
+
+          <div class="recommend-user"> <!--1-->
+            <div class="recommend-user-left">
+              <img src="../image/user2-removebg-preview.png" style="width : 45px; height : 45px;">
+              <div>
+                <span class="user-name">4o9oon</span>
+                <span class="recommend-follow-me">회원님을 팔로우합니다</span>
+              </div>
+            </div>
+            <span class="blue-span">팔로우</span>
+          </div>
+
+          <div class="recommend-user"> <!--2-->
+            <div class="recommend-user-left">
+              <img src="../image/user3-removebg-preview.png" style="width : 45px; height : 45px;">
+              <div>
+                <span class="user-name">4o9oon</span>
+                <span class="recommend-follow-me">회원님을 팔로우합니다</span>
+              </div>
+            </div>
+            <span class="blue-span">팔로우</span>
+          </div>
+
+          <div class="recommend-user"> <!--3-->
+            <div class="recommend-user-left">
+              <img src="../image/user4-removebg-preview.png" style="width : 45px; height : 45px;">
+              <div>
+                <span class="user-name">4o9oon</span>
+                <span class="recommend-follow-me">회원님을 팔로우합니다</span>
+              </div>
+            </div>
+            <span class="blue-span">팔로우</span>
+          </div>
+
+          <div class="recommend-user"> <!--4-->
+            <div class="recommend-user-left">
+              <img src="../image/user5-removebg-preview.png" style="width : 45px; height : 45px;">
+              <div>
+                <span class="user-name">4o9oon</span>
+                <span class="recommend-follow-me">회원님을 팔로우합니다</span>
+              </div>
+            </div>
+            <span class="blue-span">팔로우</span>
+          </div>
+          
+          <div class="side-container-footer">
+            <span>소개・도움말・홍보 센터・API・채용 정보</span>
+            <span>개인정보처리방침・약관・위치・인기 계정・해시태그・</span>
+            <span>언어</span>
+            <span>© 2022 Instagram from Meta</span>
+          </div>
+        </div>
+      </main>
+      <!--dots-modal-->
+      <div class="dots-modal-wrapper">
+        <div class="dots-modal">
+          <div class="dots-modal-li li-red">신고</div>
+          <div class="dots-modal-li li-red">팔로우 취소</div>
+          <div class="dots-modal-li">게시물로 이동</div>
+          <div class="dots-modal-li">공유 대상...</div>
+          <div class="dots-modal-li">링크 복사</div>
+          <div class="dots-modal-li">퍼가기</div>
+          <div class="dots-modal-li dots-modal-close">취소</div>
+        </div> <!--안에 div를 button으로 바꾸면 디자인이 이상해짐-->
+      </div>
+      <!--comment-modal-->
+      <div class="comment-modal-wrapper" style="display:flex;">
+        <div class="comment-modal">
+          <img src="../image/post.PNG" style="width:60%;">
+          <div class="modal-right">
+            <div class="post-header" style="border-bottom: solid 0.5px rgba(0,0,0,0.1);">
+              <div class="post-writer">
+                <img src="../image/user-removebg-preview.png" class="modal-writer-img" style="height:45px;">
+                <span class="user-name">4o9oon</span>
+              </div>
+              <img src="../image/dots.png" class="dots-modal-open" style="width: 20px">
+            </div>
+            <div class="modal-content">
+              <img src="../image/user-removebg-preview.png" class="modal-writer-img" style="height:45px;">
+              <div class="modal-content-right">
+                <span class="user-name">4o9oon</span>
+                <span>어쩌구저쩌구</span> <!--모달 내용-->
+              </div>
+            </div>
+            
+            <div class="post-icons" style="border-top: solid 0.5px rgba(0,0,0,0.1); padding-top:15px;">
+              <div class="post-icons-left">
+                <img src="../image/empty heart.png" onclick="icon_click(this)" style="margin-right : 20px;">
+                <img src="../image/comment.png" style="margin-right : 20px;">
+                <img src="../image/send.png">
+              </div>
+              <img src="../image/empty bookmark.png" onclick="icon_click(this)"><!--책갈피--> 
+            </div>
+            <span class="post-like">좋아요 100000개</span>
+            <span class="post-time" style="margin-top :10px;">49분 전</span>
+            <div class="post-comments modal-comments">
+              <img src="../image/smile.png" style="width: 20px" >
+              <input class="post-comments-input" placeholder="댓글 달기...">
+              <span class="blue-span">게시</span>
+            </div>
+          </div>
+          
+        </div>
+        <i class="fa-solid fa-x comment-modal-close"></i>
+        
+      </div>
+
+    </section>
+    <script src="../js/component/icon.js"></script>
+    <script src="../js/component/dotModal.js"></script>
+    <script src="../js/component/commentModal.js"></script>
+  </body>
+</html>
